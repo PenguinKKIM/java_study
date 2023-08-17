@@ -1,6 +1,6 @@
 package arr_exc;
 
-import java.util.Scanner;
+//import java.util.Scanner;
 
 //다음은 거스름돈을 몇 개의 동전으로 지불할 수 있는지를 계산하는 문제이다.
 //변수 money의 금액을 동전으로 바꾸었을 때 각각 몇 개의 동전이 필요한지 계산해서 출력하라.
@@ -21,14 +21,17 @@ public class Exc6 {
 //		int money;
 //		money =sc.nextInt();
 		
-		
-		System.out.println("money=" + money);
+		int coinNum = 0;
+		System.out.println("money = " + money);
 		for (int i = 0; i < coinUnit.length; i++) {
 			//coinUnit의 i 번째 (i 인덱스) 와 money의 값을 나누어 준다
-			System.out.println(coinUnit[i] + "원 : " + money/coinUnit[i]);
+			
+			coinNum =  money/coinUnit[i];			
+			System.out.println(coinUnit[i] + "원 : " + coinNum);
 			
 			//coinUnit[i] 를 지불하고 남은 금액을 나머지 시켜 money에 넣는다
 			money = money % coinUnit[i];
+			//money %= coinUnit[i];
 		}
 		
 		
