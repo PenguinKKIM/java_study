@@ -37,18 +37,30 @@ class Bank {
 			System.out.println(accs[i].info());
 		}
 	}
+	
 	void accountInfo(String id) {
-		System.out.println();
+		for(int i = 0; i < accCnt; i++) {
+			if (accs[i].id == id) 
+			{System.out.println(accs[i].info());
+			}
+		}
 	}
 	
-	int withdraw(int money) {
-		balance -= money;
-		return  balance;
+	void withdraw (String id, int money) {
+		for(int i = 0; i < accCnt; i++) {
+			if (accs[i].id == id) {
+				accs[i].balance -= money;
+			}
+			System.out.println(accs[i].info());
+		}
 	}
 	
-	int deposit(int money) {
-		balance += money;
-		return balance;
+	void deposit (String id, int money) {
+		for(int i = 0; i < accCnt; i++) {
+			if (accs[i].id == id)
+				accs[i].balance += money;
+			System.out.println(accs[i].info());
+		}
 	}
 	
 }
@@ -65,7 +77,7 @@ public class ClassTeat5 {
 		
 		bank.withdraw("10001", 10000); //출금
 		bank.accountInfo("10001");
-		
+	
 		bank.deposit("10001", 10000); //입금
 		bank.accountInfo("10001");
 		
