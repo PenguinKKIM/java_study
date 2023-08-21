@@ -10,20 +10,48 @@ public class Exc10_1 {
 
 		String result = "`~!wer";
 		String src = ""; // abc123
+		
+//		for (int i = 0; i < result.length(); i++) {
+//			char ch = result.charAt(i); // 하나의 캐릭터를 가져옴
+//
+//			for (int j = 0; j < abcCode.length; j++) {
+//				if (ch == abcCode[j]) {
+//					src += (char)(j+'a');
+//				}
+//			}
+//
+//			for (int j = 0; j < numCode.length; j++) {
+//				if (ch == numCode[j]) {
+//					src += (char)(j+'0');
+//				}
+//			}
+//		}
+		
 		for (int i = 0; i < result.length(); i++) {
-			char ch = result.charAt(i);
-
-			for (int j = 0; j < abcCode.length; j++) {
-				if (ch == abcCode[j]) {
-					src += (char)(j+'a');
+			char ch = result.charAt(i); // 하나의 캐릭터를 가져옴
+			int idx = -1; //배열에는 -1 이 있을수 없으니 정의를 내리는것 > 예외 처리 해주신것
+			
+			if (ch >= 'a' && ch <= 'z') {
+				for (int j = 0; j < numCode.length; j++) {
+					if (ch == numCode[j]) {
+						idx = j;
+						break;
+					}
+				}//for문 끝
+				
+				src += (char)('0' + idx);
+				
+			} else {
+				for (int j = 0; j < abcCode.length; j++) {
+					if (ch == abcCode[j]) {
+						idx = j;
+						break;
+					}
 				}
+				src += (char)('a' + idx);
 			}
-
-			for (int j = 0; j < numCode.length; j++) {
-				if (ch == numCode[j]) {
-					src += (int)j;
-				}
-			}
+			
+			
 		}
 		
 		System.out.println("result:" + result);
