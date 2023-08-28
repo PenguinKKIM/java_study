@@ -3,7 +3,7 @@ package arr_exc;
 //스캐너를 사용해서 입력 방법을 바꿔주심
 import java.util.Scanner;
 
-public class Exc7_1 {
+public class Exc07_1 {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);

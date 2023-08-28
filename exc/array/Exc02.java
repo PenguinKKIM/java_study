@@ -1,6 +1,6 @@
 package arr_exc;
 
-public class Exc2 {
+public class Exc02 {
 	public static void main(String[] args) {
 		int[][] arr = { // [][] 가 두번 붙으면 2차원 배열 이라는 뜻이다
 				{ 5, 5, 5, 5, 5 },

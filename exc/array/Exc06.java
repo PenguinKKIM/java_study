@@ -8,7 +8,7 @@ package arr_exc;
 //(1)에 알맞은 코드를 넣어서 프로그램을 완성하시오.
 //[Hint] 나눗셈 연산자와 나머지 연산자를 사용해야 한다.
 
-public class Exc6 {
+public class Exc06 {
 
 	public static void main(String[] args) {
 		// 큰 금액의 동전을 우선적으로 거슬러 줘야한다.

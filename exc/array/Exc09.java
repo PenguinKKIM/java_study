@@ -1,6 +1,6 @@
 package arr_exc;
 
-public class Exc9 {
+public class Exc09 {
 	public static void main(String[] args) {
 		char[][] star = { 	{ '*', '*', ' ', ' ', ' ' },
 							{ '*', '*', ' ', ' ', ' ' }, 

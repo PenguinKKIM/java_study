@@ -1,6 +1,6 @@
 package arr_exc;
 
-public class Exc4 {
+public class Exc04 {
 	public static void main(String[] args) {
 		int[][] arr = { { 5, 5, 5, 5, 5 }, 
 						{ 10, 10, 10, 10, 10 }, 

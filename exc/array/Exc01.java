@@ -1,6 +1,6 @@
 package arr_exc;
 
-public class Exc1 {
+public class Exc01 {
 	public static void main(String[] args) {
 //		 int[] arr1[]; //int[][] arr1 과 같다
 //		 

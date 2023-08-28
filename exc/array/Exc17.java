@@ -10,7 +10,7 @@ import java.util.Scanner;
  * 출력 60 77 85 95 100 //올림차수로 정렬
  */
 
-public class Exc_17 {
+public class Exc17 {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);

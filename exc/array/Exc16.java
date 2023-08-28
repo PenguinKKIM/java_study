@@ -1,6 +1,6 @@
 package arr_exc;
 
-public class Exc_16 {
+public class Exc16 {
 
 	public static void main(String[] args) {
 		// 배열을 생성한다

@@ -2,7 +2,7 @@ package arr_exc;
 
 import java.util.Arrays;
 
-public class Exc8 {
+public class Exc08 {
 	public static void main(String[] args) {
 		int[] answer = { 1, 4, 4, 3, 1, 4, 4, 2, 1, 3, 2 }; //여기 숫자가 4종류라는걸 모르면 어카지 ??
 		int[] counter = new int[4]; 

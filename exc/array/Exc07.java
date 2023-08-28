@@ -1,6 +1,6 @@
 package arr_exc;
 
-public class Exc7 {
+public class Exc07 {
 	public static void main(String[] args) {
 		if (args.length != 1) {
 			System.out.println("USAGE: java Exercise5_7 3120");
